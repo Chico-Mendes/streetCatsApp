@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StreetCats</string>
+    <string name="no_layout">No layout assigned!</string>
+
+    <string-array name="tab_titles">
+        <item>Food</item>
+        <item>Initial</item>
+        <item>Tree</item>
+    </string-array>
+</resources>
