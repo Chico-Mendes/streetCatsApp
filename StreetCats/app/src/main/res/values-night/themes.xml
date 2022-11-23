@@ -7,14 +7,18 @@
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/secondaryLightColor</item>
-        <item name="colorSecondaryVariant">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Tertiary brand color. -->
         <item name="colorTertiary">@color/tertiaryDarkColor</item>
         <item name="colorOnTertiary">@color/white</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorTertiary</item>
+        <!-- Window background color. -->
         <item name="android:windowBackground">@color/backgroundDarkColor</item>
+    </style>
+
+    <style name="Theme.StreetCats.Dark">
     </style>
 
     <style name="Theme.StreetCats.NoActionBar">

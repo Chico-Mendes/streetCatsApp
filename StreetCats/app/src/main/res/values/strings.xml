@@ -1,10 +1,17 @@
 <resources>
     <string name="app_name">StreetCats</string>
     <string name="no_layout">No layout assigned!</string>
+    <string name="food_title">Food</string>
+    <string name="tree_title">Tree</string>
+    <string name="cat_profile">%s\'s Profile</string>
 
+    <!-- content description -->
+    <string name="add_cat_fab">Add new cat</string>
+
+    <!-- TODO: delete later -->
     <string-array name="tab_titles">
-        <item>Food</item>
-        <item>Initial</item>
-        <item>Tree</item>
+        <item>@string/food_title</item>
+        <item>@string/app_name</item>
+        <item>@string/tree_title</item>
     </string-array>
 </resources>
