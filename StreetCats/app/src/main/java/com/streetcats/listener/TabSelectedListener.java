@@ -1,12 +1,8 @@
 package com.streetcats.listener;
 
-import android.content.Context;
-import android.view.View;
-
 import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.material.tabs.TabLayout;
-import com.streetcats.MainActivity;
 import com.streetcats.R;
 import com.streetcats.fragments.DefaultFragment;
 import com.streetcats.fragments.StreetCatsFragment;

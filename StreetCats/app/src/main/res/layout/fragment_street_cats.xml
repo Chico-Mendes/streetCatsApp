@@ -42,7 +42,6 @@
         android:clickable="true"
         android:contentDescription="@string/add_cat_fab"
         android:foreground="@drawable/ic_default"
-        android:onClick="onPlusCat"
         app:borderWidth="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

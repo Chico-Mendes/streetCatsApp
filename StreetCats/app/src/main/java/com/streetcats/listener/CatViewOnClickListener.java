@@ -7,7 +7,7 @@ import com.streetcats.CatProfileActivity;
 import com.streetcats.MainActivity;
 import com.streetcats.model.Cat;
 
-public class CatViewOnClickListener implements View.OnClickListener{
+public class CatViewOnClickListener implements View.OnClickListener {
     Cat item;
 
     public CatViewOnClickListener(Cat input) {

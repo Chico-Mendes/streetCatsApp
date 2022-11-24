@@ -11,9 +11,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.streetcats.MainActivity;
 import com.streetcats.R;
 import com.streetcats.adapter.ItemAdapter;
+import com.streetcats.listener.AddCatOnClickListener;
 
 public class StreetCatsFragment extends Fragment {
 
@@ -31,8 +33,8 @@ public class StreetCatsFragment extends Fragment {
         // Use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
         recyclerView.setHasFixedSize(true);
-    }
 
-    public void onPlusCat(View view) {
+        FloatingActionButton fab = view.findViewById(R.id.addFAB);
+        fab.setOnClickListener(new AddCatOnClickListener());
     }
 }
