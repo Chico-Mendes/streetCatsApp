@@ -34,6 +34,5 @@ public class StreetCatsFragment extends Fragment {
     }
 
     public void onPlusCat(View view) {
-        int i=0;
     }
 }

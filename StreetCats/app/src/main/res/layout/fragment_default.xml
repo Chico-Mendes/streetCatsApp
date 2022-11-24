@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="?attr/colorTertiary"
-        android:fontFamily="@font/nunito_light"
+        android:fontFamily="@font/nunito_bold"
         android:gravity="center"
         android:text="@string/no_layout"
         android:textColor="@color/primaryColor"

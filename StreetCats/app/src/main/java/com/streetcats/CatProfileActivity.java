@@ -16,9 +16,9 @@ public class CatProfileActivity extends AppCompatActivity {
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
         String name = intent.getStringExtra(MainActivity.CAT_NAME);
-        String title = getString(R.string.cat_profile, name);
+        String text = getString(R.string.cat_profile, name);
         TextView textView = findViewById(R.id.textView);
-        textView.setText(title);
-        setTitle(title);
+        textView.setText(text);
+        setTitle(name);
     }
 }

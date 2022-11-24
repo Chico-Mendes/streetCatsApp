@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.streetcats.CatProfileActivity;
 import com.streetcats.MainActivity;
 import com.streetcats.R;
+import com.streetcats.listener.CatViewOnClickListener;
 import com.streetcats.model.Cat;
 
 import java.util.ArrayList;
@@ -63,14 +64,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         Cat item = dataset.get(position);
         holder.nameView.setText(item.getName());
 
-        holder.cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(context, CatProfileActivity.class);
-                intent.putExtra(MainActivity.CAT_NAME, item.getName());
-                context.startActivity(intent);
-            }
-        });
+        holder.cardView.setOnClickListener(new CatViewOnClickListener(item));
     }
 
     /**
