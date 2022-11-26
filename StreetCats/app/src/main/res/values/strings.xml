@@ -1,17 +1,25 @@
 <resources>
-    <string name="app_name">StreetCats</string>
-    <string name="no_layout">No layout assigned!</string>
+    <string name="app_name" translatable="false">StreetCats</string>
     <string name="food_title">Food</string>
     <string name="tree_title">Tree</string>
+    <string name="settings">Settings</string>
+    <string name="add_cat">Add new cat</string>
+
+    <!-- debug -->
+    <string name="no_layout" translatable="false">No layout assigned!</string>
     <string name="cat_profile">%s\'s Profile</string>
 
-    <!-- content description -->
-    <string name="add_cat_fab">Add new cat</string>
+    <!-- Preference Titles -->
+    <string name="theme_header">Theme</string>
+    <string name="language_header">Language</string>
 
-    <!-- TODO: delete later -->
-    <string-array name="tab_titles">
-        <item>@string/food_title</item>
-        <item>@string/app_name</item>
-        <item>@string/tree_title</item>
-    </string-array>
+    <!-- Theme Preferences -->
+    <string name="light_theme">Light theme</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="system_default_theme">System default</string>
+
+    <!-- Language Preferences -->
+    <string name="en_language" translatable="false">English</string>
+    <string name="ptpt_language" translatable="false">Português (Portugal)</string>
+
 </resources>

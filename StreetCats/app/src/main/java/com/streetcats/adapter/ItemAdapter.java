@@ -61,10 +61,10 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
      */
     @Override
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
-        Cat item = dataset.get(position);
-        holder.nameView.setText(item.getName());
+        Cat cat = dataset.get(position);
+        holder.nameView.setText(cat.getName());
 
-        holder.cardView.setOnClickListener(new CatViewOnClickListener(item));
+        holder.cardView.setOnClickListener(new CatViewOnClickListener(cat));
     }
 
     /**

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_cat">Adicionar gato novo</string>
+    <string name="tree_title">Árvore</string>
+    <string name="food_title">Comida</string>
+    <string name="cat_profile">Perfil de %s</string>
+    <string name="settings">Definições</string>
+    <string name="theme_header">Tema</string>
+    <string name="light_theme">Modo claro</string>
+    <string name="dark_theme">Modo escuro</string>
+    <string name="system_default_theme">Predefinição do sistema</string>
+    <string name="language_header">Idioma</string>
+</resources>

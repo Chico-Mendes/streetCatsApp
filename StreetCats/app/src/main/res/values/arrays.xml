@@ -1,0 +1,33 @@
+<resources>
+    <!-- TODO: delete later -->
+    <string-array name="tab_titles">
+        <item>@string/food_title</item>
+        <item>@string/app_name</item>
+        <item>@string/tree_title</item>
+        <item>@string/settings</item>
+    </string-array>
+
+    <!-- Theme Preference -->
+    <string-array name="theme_entries">
+        <item>@string/light_theme</item>
+        <item>@string/dark_theme</item>
+        <item>@string/system_default_theme</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>light theme</item>
+        <item>dark theme</item>
+        <item>system default</item>
+    </string-array>
+
+    <!-- Language Preference -->
+    <string-array name="language_entries">
+        <item>@string/en_language</item>
+        <item>@string/ptpt_language</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>en</item>
+        <item>pt-PT</item>
+    </string-array>
+</resources>

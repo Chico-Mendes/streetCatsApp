@@ -15,7 +15,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.streetcats.MainActivity;
 import com.streetcats.R;
 import com.streetcats.adapter.ItemAdapter;
-import com.streetcats.listener.AddCatOnClickListener;
+import com.streetcats.listener.AddEditCatOnClickListener;
 
 public class StreetCatsFragment extends Fragment {
 
@@ -35,6 +35,6 @@ public class StreetCatsFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
 
         FloatingActionButton fab = view.findViewById(R.id.addFAB);
-        fab.setOnClickListener(new AddCatOnClickListener());
+        fab.setOnClickListener(new AddEditCatOnClickListener(getString(R.string.add_cat), null));
     }
 }
