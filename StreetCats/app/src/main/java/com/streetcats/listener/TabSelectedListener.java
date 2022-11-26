@@ -12,10 +12,10 @@ import com.streetcats.fragments.StreetCatsFragment;
 public class TabSelectedListener implements TabLayout.OnTabSelectedListener {
     FragmentActivity fragmentActivity;
 
-    public TabSelectedListener(FragmentActivity fa){
+    public TabSelectedListener(FragmentActivity fa) {
         fragmentActivity = fa;
     }
-    
+
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
         int position = tab.getPosition();

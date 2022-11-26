@@ -1,7 +1,6 @@
 package com.streetcats.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,8 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.streetcats.CatProfileActivity;
-import com.streetcats.MainActivity;
 import com.streetcats.R;
 import com.streetcats.listener.CatViewOnClickListener;
 import com.streetcats.model.Cat;
@@ -24,7 +21,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     private Context context;
     private ArrayList<Cat> dataset;
 
-    public static class ItemViewHolder extends RecyclerView.ViewHolder{
+    public static class ItemViewHolder extends RecyclerView.ViewHolder {
         private CardView cardView;
         private TextView nameView;
         private ImageView imageView;

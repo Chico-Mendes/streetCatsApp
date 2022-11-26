@@ -1,13 +1,13 @@
 package com.streetcats;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.preference.PreferenceManager;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.preference.PreferenceManager;
 
 import com.google.android.material.tabs.TabLayout;
 import com.streetcats.data.Datasource;
@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tab_layout);
         tabSelectedListener = new TabSelectedListener(this);
 
-        for(int position = 0; position < tabSize; position++) {
+        for (int position = 0; position < tabSize; position++) {
             TabLayout.Tab tab = tabLayout.newTab();
-            if(position!=3) tab.setText(tabTitles[position]); // TODO: delete later
+            if (position != 3) tab.setText(tabTitles[position]); // TODO: delete later
             tab.setIcon(tabIcons[position]);
             tabLayout.addTab(tab);
         }

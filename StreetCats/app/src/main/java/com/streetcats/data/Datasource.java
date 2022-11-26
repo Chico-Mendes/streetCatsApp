@@ -8,8 +8,8 @@ public class Datasource {
 
     public ArrayList<Cat> loadNames() {
         ArrayList<Cat> names = new ArrayList<>();
-        for (int i=0; i<10; i++) {
-            names.add(new Cat("Cat " + (i+1)));
+        for (int i = 0; i < 10; i++) {
+            names.add(new Cat("Cat " + (i + 1)));
         }
         return names;
     }
