@@ -32,6 +32,10 @@
     <string name="sex_male">Male</string>
     <string name="sex_undetermined">Undetermined</string>
 
+    <!-- TODO: Content descriptions -->
+    <string name="cat_photo">Photo</string>
+    <string name="cat_build">Cat model</string>
+
     <!--............ Preferences ............-->
     <!-- Preference Titles -->
     <string name="theme_header">Theme</string>

@@ -30,4 +30,6 @@
     <string name="sex_male">Macho</string>
     <string name="sex_undetermined">Indeterminado</string>
     <string name="cat_name_hint">Nome</string>
+    <string name="cat_photo">Foto</string>
+    <string name="cat_build">Gato modelo</string>
 </resources>
