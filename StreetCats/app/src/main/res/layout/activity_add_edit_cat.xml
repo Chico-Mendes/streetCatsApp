@@ -8,16 +8,17 @@
     tools:context=".AddEditCatActivity">
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/save_cat_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="24dp"
-        android:text="Save"
+        android:text="@string/save_cat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -55,7 +56,7 @@
                 app:layout_constraintGuide_end="24dp" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/photoView"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -64,190 +65,192 @@
                 app:srcCompat="@drawable/ic_default" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/imageButton"
+                android:id="@+id/addImageButton"
                 style="@style/Widget.Material3.Button.IconButton.Filled"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 app:icon="@drawable/ic_add_photo"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
-                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+                app:layout_constraintBottom_toBottomOf="@+id/photoView"
+                app:layout_constraintStart_toEndOf="@+id/photoView"
+                app:layout_constraintTop_toTopOf="@+id/photoView" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/nameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Name:"
+                android:text="@string/cat_name"
                 app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                app:layout_constraintTop_toBottomOf="@+id/photoView" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/nameEditText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Name"
+                android:hint="@string/cat_name_hint"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-                app:layout_constraintStart_toStartOf="@+id/textView3"
-                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                app:layout_constraintStart_toStartOf="@+id/nameTextView"
+                app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/ageTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Age:"
+                android:text="@string/cat_age"
                 app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+                app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/ageEditText"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number"
                 app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                app:layout_constraintTop_toBottomOf="@+id/ageTextView" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/colorTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Color:"
+                android:text="@string/cat_color"
                 app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+                app:layout_constraintTop_toBottomOf="@+id/ageEditText" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/cB_orange"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CheckBox"
+                android:text="@string/color_orange"
                 app:layout_constraintStart_toStartOf="@id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                app:layout_constraintTop_toBottomOf="@+id/colorTextView" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/cB_black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CheckBox"
+                android:text="@string/color_black"
                 app:layout_constraintStart_toStartOf="@id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+                app:layout_constraintTop_toBottomOf="@+id/cB_orange" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/cB_white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CheckBox"
+                android:text="@string/color_white"
                 app:layout_constraintStart_toStartOf="@id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+                app:layout_constraintTop_toBottomOf="@+id/cB_black" />
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/cB_siamese"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CheckBox"
+                android:text="@string/color_siamese"
                 app:layout_constraintStart_toStartOf="@id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+                app:layout_constraintTop_toBottomOf="@+id/cB_white" />
 
             <CheckBox
-                android:id="@+id/checkBox5"
+                android:id="@+id/cB_albine"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CheckBox"
+                android:text="@string/color_albine"
                 app:layout_constraintStart_toStartOf="@id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+                app:layout_constraintTop_toBottomOf="@+id/cB_siamese" />
 
             <CheckBox
-                android:id="@+id/checkBox6"
+                android:id="@+id/cB_stripes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CheckBox"
+                android:text="@string/color_stripes"
                 app:layout_constraintStart_toStartOf="@id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+                app:layout_constraintTop_toBottomOf="@+id/cB_albine" />
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/buildCatCardView"
                 android:layout_width="150dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                app:layout_constraintBottom_toBottomOf="@+id/checkBox6"
+                app:layout_constraintBottom_toBottomOf="@+id/cB_stripes"
                 app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-                app:layout_constraintTop_toTopOf="@+id/checkBox">
+                app:layout_constraintTop_toTopOf="@+id/cB_orange">
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/buildCatImageView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/ic_default" />
             </androidx.cardview.widget.CardView>
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/hairTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Hair:"
+                android:text="@string/cat_hair"
                 app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+                app:layout_constraintTop_toBottomOf="@+id/cB_stripes" />
 
             <RadioGroup
-                android:id="@+id/radioGroup"
+                android:id="@+id/hairRadioGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/textView6">
+                app:layout_constraintTop_toBottomOf="@+id/hairTextView">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/rB_hair_S"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="@string/hair_short" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/rB_hair_L"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="@string/hair_long" />
 
             </RadioGroup>
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/sexTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Sex:"
+                android:text="@string/cat_sex"
                 app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+                app:layout_constraintTop_toBottomOf="@+id/hairRadioGroup" />
 
             <RadioGroup
+                android:id="@+id/sexRadioGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
                 app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
-                app:layout_constraintTop_toBottomOf="@+id/textView8">
+                app:layout_constraintTop_toBottomOf="@+id/sexTextView">
 
                 <RadioButton
-                    android:id="@+id/radioButton2.1"
+                    android:id="@+id/rB_sex_F"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="@string/sex_female" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2.2"
+                    android:id="@+id/rB_sex_M"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="@string/sex_male" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2.3"
+                    android:id="@+id/rB_sex_X"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="@string/sex_undetermined" />
             </RadioGroup>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

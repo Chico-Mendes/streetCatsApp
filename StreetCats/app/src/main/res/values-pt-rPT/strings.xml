@@ -10,4 +10,24 @@
     <string name="dark_theme">Modo escuro</string>
     <string name="system_default_theme">Predefinição do sistema</string>
     <string name="language_header">Idioma</string>
+    <string name="no_layout">Nenhum layout definido</string>
+    <string name="edit_cat">Editar gato</string>
+    <string name="cat_name">Nome:</string>
+    <string name="cat_age">Idade:</string>
+    <string name="cat_color">Cor:</string>
+    <string name="cat_hair">Pelo:</string>
+    <string name="cat_sex">Sexo:</string>
+    <string name="save_cat">Salvar</string>
+    <string name="color_orange">Laranja</string>
+    <string name="color_black">Preto</string>
+    <string name="color_white">Branco</string>
+    <string name="color_siamese">Siamês</string>
+    <string name="color_albine">Albino</string>
+    <string name="color_stripes">Riscas</string>
+    <string name="hair_short">Curto</string>
+    <string name="hair_long">Longo</string>
+    <string name="sex_female">Fêmea</string><!-- TODO: confirm translation -->
+    <string name="sex_male">Macho</string>
+    <string name="sex_undetermined">Indeterminado</string>
+    <string name="cat_name_hint">Nome</string>
 </resources>

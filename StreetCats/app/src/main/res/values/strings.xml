@@ -3,12 +3,36 @@
     <string name="food_title">Food</string>
     <string name="tree_title">Tree</string>
     <string name="settings">Settings</string>
+
+    <!--............ AddEdit Cat ............-->
     <string name="add_cat">Add new cat</string>
+    <string name="edit_cat">Edit cat</string>
+    <string name="cat_name">Name:</string>
+    <string name="cat_name_hint">Name</string>
+    <string name="cat_age">Age:</string>
+    <string name="cat_color">Color:</string>
+    <string name="cat_hair">Hair:</string>
+    <string name="cat_sex">Sex:</string>
+    <string name="save_cat">Save</string>
+    
+    <!-- Cat Color -->
+    <string name="color_orange">Orange</string>
+    <string name="color_black">Black</string>
+    <string name="color_white">White</string>
+    <string name="color_siamese">Siamese</string>
+    <string name="color_albine">Albine</string>
+    <string name="color_stripes">Stripes</string>
 
-    <!-- debug -->
-    <string name="no_layout" translatable="false">No layout assigned!</string>
-    <string name="cat_profile">%s\'s Profile</string>
+    <!-- Cat Hair -->
+    <string name="hair_short">Short</string>
+    <string name="hair_long">Long</string>
 
+    <!-- Cat Sex -->
+    <string name="sex_female">Female</string>
+    <string name="sex_male">Male</string>
+    <string name="sex_undetermined">Undetermined</string>
+
+    <!--............ Preferences ............-->
     <!-- Preference Titles -->
     <string name="theme_header">Theme</string>
     <string name="language_header">Language</string>
@@ -17,9 +41,12 @@
     <string name="light_theme">Light theme</string>
     <string name="dark_theme">Dark theme</string>
     <string name="system_default_theme">System default</string>
-
+8
     <!-- Language Preferences -->
     <string name="en_language" translatable="false">English</string>
     <string name="ptpt_language" translatable="false">Português (Portugal)</string>
 
+    <!-- TODO: debug -->
+    <string name="no_layout">No layout assigned!</string>
+    <string name="cat_profile">%s\'s Profile</string>
 </resources>
